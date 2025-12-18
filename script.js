@@ -1,26 +1,27 @@
 console.log("inizio esecuzione");
-function elabora(){
-let numero = document.getElementById("inNumber").value;
-alert(numero);
-if("inNumber".value<=255){
-    alert("giusto");    
-    }else{
-    alert("sbagliato");    
-    }
-}
-
-console.log("inizio esecuzione");
 let d = new Date();
 console.log(d);
-document.getElementById("saluto").innerHTML=d+"è un bel giorno";
+document.getElementById("saluto").innerHTML=d.getDay()+"è un bel giorno";
+let colori=[];
+let colori2=new array();
+
 function elabora(){
 let numero = document.getElementById("inNumber").value;
 alert(numero);
+
 if(numero >=0 && numero <=255){
-    document.getElementById("out").innerHTML="Hai inserito il numero"+numero;   
+    colori.push(numero);
+    document.getElementById("out").innerHTML="Hai inserito il numero"+numero;
+    document.getElementById("out").innerHTML+="<br>I colori inseriti sono :"+colori;
+    console.log(colori);
+    if(colori.length == 3){
+        newColor= `rgb(${colori[0]}, ${colori[1]},${colori[2]})`;
+        
     }
-    else{
+    }else{
     document.getElementById("error").innerHTML ="il numero non è corretto";   
-   
     }
+}
+function reset(){
+    
 }

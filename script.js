@@ -1,7 +1,8 @@
 console.log("inizio esecuzione");
 let d = new Date();
 console.log(d);
-document.getElementById("saluto").innerHTML=d.getDay()+"è un bel giorno";
+document.getElementById("saluto").innerHTML=d.getDate()+
+"CODICI e COLORI";
 let colori=[];
 let colori2=new array();
 

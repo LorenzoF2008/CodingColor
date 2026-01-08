@@ -1,9 +1,7 @@
-
 console.log("inizio esecuzione");
 let d = new Date();
 console.log(d);
-document.getElementById("saluto").innerHTML=d.getDate()+
-"CODICI e COLORI";
+document.getElementById("saluto").innerHTML=d.getDay()+"è un bel giorno";
 let colori=[];
 let colori2=new array();
 
@@ -22,11 +20,8 @@ if(numero >=0 && numero <=255){
     }
     }else{
     document.getElementById("error").innerHTML ="il numero non è corretto";   
-    document.getElementById("error").innerHTML ="il numero"+numero+"non è corretto";
-    document.getElementById("out).innerHTML ="output";
-}
+    }
 }
 function reset(){
     
 }
-
